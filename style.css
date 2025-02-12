@@ -76,6 +76,9 @@ body{
     font-weight: 800;
 
 }
+.clicked{
+    opacity: 0.5;
+}
 .delete-btn{
     margin-top: 5px;
     margin-bottom: 10px;

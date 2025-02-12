@@ -85,5 +85,18 @@
             <button class="btn-seeall">See All</button>
         </div>
     </div>
+    <script>
+        const listButton= document.querySelectorAll(".confirm-btn");
+        listButton.forEach((button)=>{
+            button.addEventListener("click",()=>{
+                const parent= button.parentElement.parentElement.parentElement;
+                console.log(parent);
+                parent.removeChild(button.parentElement.parentElement);
+                button.classList.add("clicked");
+                button.innerText="Accepted";
+            })
+            
+        })
+    </script>
 </body>
 </html>
